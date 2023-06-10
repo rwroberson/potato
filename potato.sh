@@ -20,7 +20,7 @@ show_help() {
 }
 
 play_notification() {
-	aplay -q /usr/lib/potato/notification.wav&
+	mpv /usr/lib/potato/notification.wav&
 }
 
 while getopts :sw:b:m opt; do
